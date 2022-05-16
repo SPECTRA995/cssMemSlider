@@ -2,4 +2,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: white;
+}
+
+body {
+    background-color: rgb(102, 103, 171);
+    padding-top: 20vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.slider_container {
+    width: 100%;
+    max-width: 50%;
+    height: 60vh;
+    position: relative;
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block;
+    animation: fade 5s linear infinite;
+  animation-delay: 2.5s
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.second_container {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    max-width: 50%;
+    width: 100%;
+    margin-left: 25%;
+}
+
+.text {
+    width: 40vw;
+}
+
+.points {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 7%;
+}
+
+.point_one, .point_two, .point_three, .point_four {
+    height: 5vh;
+    padding-top: 10%;
+}
+
+.point.active {
+    background-color: blue;
+    border: 0.1rem solid rgb(255, 0, 255);
+}
+
+.point.active:hover {
+    background-color: blue;
+    border: 2px solid white;
+}
+
+.point:hover {
+    background-color: blue;
+}
+
+.point_one:hover .one, .point_two:hover .two, .point_three:hover .three, .point_four:hover .four {
+    background-color: blue;
+}
+
+.point {
+    width: 1.2rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-right: 5%;
+    background-color: rgb(255, 0, 255); 
+    cursor: pointer;
+}
+.point:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .second_container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
