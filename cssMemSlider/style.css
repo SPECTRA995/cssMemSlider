@@ -63,7 +63,10 @@ img {
     gap: 7%;
 }
 
-.point_one, .point_two, .point_three, .point_four {
+.point_one, 
+.point_two, 
+.point_three, 
+.point_four {
     height: 5vh;
     padding-top: 10%;
 }
@@ -82,7 +85,10 @@ img {
     background-color: blue;
 }
 
-.point_one:hover .one, .point_two:hover .two, .point_three:hover .three, .point_four:hover .four {
+.point_one:hover .one, 
+.point_two:hover .two, 
+.point_three:hover .three, 
+.point_four:hover .four {
     background-color: blue;
 }
 
@@ -94,6 +100,7 @@ img {
     background-color: rgb(255, 0, 255); 
     cursor: pointer;
 }
+
 .point:last-child {
     margin-right: 0;
 }
