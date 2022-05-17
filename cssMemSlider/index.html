@@ -8,39 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="slider_container">
-            <div class="slide active">
+    <div class="slider container">
+
+        <div class="slides">
+
+            <input type="radio" name="rad" id="radio_one" checked>
+            <input type="radio" name="rad" id="radio_two">
+            <input type="radio" name="rad" id="radio_three">
+            <input type="radio" name="rad" id="radio_four">
+
+            <div class="slide current">
                 <img src="assets/img/1.jpg" alt="The first mem">
+                <div class="text">
+                    <p class = "text_item">Of course =(</p>
+                </div>
             </div>
+
             <div class="slide">
                 <img src="assets/img/2.jpg" alt="The second mem">
+                <div class="text">
+                    <p class = "text_item">That's right!</p>
+                </div>
             </div>
+
             <div class="slide">
                 <img src="assets/img/3.jpg" alt="The third mem">
+                <div class="text">
+                    <p class = "text_item">Sorry Max xD</p>
+                </div>
             </div>
+
             <div class="slide">
                 <img src="assets/img/4.jpg" alt="The fourth mem">
+                <div class="text">
+                    <p class = "text_item">Think about it!</p>
+                </div>
             </div>
+
+            <div class="nav">
+                <label for="radio_one" class="point" id="one"></label>
+                <label for="radio_two" class="point" id="two"></label>
+                <label for="radio_three" class="point" id="three"></label>
+                <label for="radio_four" class="point" id="four"></label>
+            </div>
+
         </div>
+
     </div>
-    <div class="second_container">
-        <div class="text" id="text">Of course =(</div>
-        <div class="points">
-            <div class="point_one">
-                <div class="point one active"></div>
-            </div>
-            <div class="point_two">
-                <div class="point two"></div>
-            </div>
-            <div class="point_three">
-                <div class="point three"></div>
-            </div>
-            <div class="point_four">
-                <div class="point four"></div>
-            </div>
-        </div>
-    </div>
-    <script src="index.js"></script>
+
+    <div class="pull"><a href="//github.com/SPECTRA995/cssMemSlider/pull/1">Ссылка на Pull Request</a></div>
 </body>
 </html>
