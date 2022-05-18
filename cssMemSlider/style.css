@@ -10,6 +10,11 @@ body {
     color: white;
 }
 
+header {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
 .slider {
     width: 50%;
     height: 60%;
@@ -19,8 +24,8 @@ body {
 }
 
 .container {
-    position: absolute;
-    margin: 20vh 25vw;
+    margin: 0 auto;
+    vertical-align: center;
 }
 
 .slides {
@@ -30,8 +35,8 @@ body {
 }
 
 input[name="rad"] {
-    position: absolute;
     visibility: hidden;
+    margin-left: -0.95em;
 }
 
 .slide {
@@ -41,7 +46,7 @@ input[name="rad"] {
 
 .slide img {
     width: 100%;
-    height: 95%;
+    height: 86%;
 }
 
 .text_item {
@@ -50,8 +55,7 @@ input[name="rad"] {
 
 .nav {
     display: flex;
-    position: absolute;
-    padding: 52vh 0 0 38vw;
+    margin: -10.5% 0 3vh 38vw;
 }
 
 .point {
@@ -66,10 +70,10 @@ input[name="rad"] {
 }
 
 .point:hover {
-    transform: scale(1.1);
     opacity: 1;
     background-color: darkslateblue;
     border: 0.1rem solid rgb(255, 0, 255);
+    box-sizing: border-box;
 }
 
 #radio_one:checked ~ .current {
@@ -98,11 +102,14 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+.active {
+    background-color: darkslateblue;
+}
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .nav {
-        padding: 52vh 0 0 20vw;
+        margin: -10.5% 0 4vh 39%;
     }
 
 }
