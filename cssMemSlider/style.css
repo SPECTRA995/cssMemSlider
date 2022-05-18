@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(102, 103, 171);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.slider {
+    width: 50%;
+    height: 60%;
+    box-shadow: 20px 20px 80px 5px rgba(0,0,0,0.75);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.container {
+    margin: 0 auto;
+    vertical-align: center;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 90%;
+}
+
+input[name="rad"] {
+    visibility: hidden;
+    margin-left: -0.95em;
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 86%;
+}
+
+.text_item {
+    margin: 27px 0px 0px 10px;
+}
+
+.nav {
+    display: flex;
+    margin: -10.5% 0 3vh 38vw;
+}
+
+.point {
+    width: 2vw;
+    height: 2vh;
+    margin: 0.5vw;
+    cursor: pointer;
+    background-color: rgb(255, 0, 255);
+    opacity: 0.5;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.point:hover {
+    opacity: 1;
+    background-color: darkslateblue;
+    border: 0.1rem solid rgb(255, 0, 255);
+    box-sizing: border-box;
+}
+
+#radio_one:checked ~ .current {
+    margin-left: 0;
+}
+
+#radio_two:checked ~ .current {
+    margin-left: -25%;
+}
+
+#radio_three:checked ~ .current {
+    margin-left: -50%;
+}
+
+#radio_four:checked ~ .current {
+    margin-left: -75%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 0, 255);
+    transition: all 0.3s ease;
+}
+
+.active {
+    background-color: darkslateblue;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        margin: -10.5% 0 4vh 39%;
+    }
+
+}
